@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GIFT - Strona Filmowa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Formularz -->
+  <div id="auth-container">
+    <div id="form-box">
+      <h2>Zaloguj się lub Zarejestruj</h2>
+      <input type="text" id="username" placeholder="Imię / Pseudonim" />
+      <input type="password" id="password" placeholder="Hasło" />
+      <div class="buttons">
+        <button onclick="register()">Zarejestruj</button>
+        <button onclick="login()">Zaloguj</button>
+      </div>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <!-- Strona główna -->
+  <div id="main-content" style="display: none;">
+    <!-- Pasek zakładek -->
+    <header>
+      <nav>
+        <a href="https://discord.gg/yourserver" target="_blank">DISCORd</a>
+        <a href="#about">O nas..</a>
+        <a href="#top"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" class="icon"/> Strona Główna</a>
+        <div class="user-menu" onclick="toggleUserMenu()">⚙️</div>
+      </nav>
+      <div id="user-popup">
+        <button onclick="logout()">Wyloguj się</button>
+        <button onclick="closePopup()">Wyjdź</button>
+      </div>
+    </header>
+
+    <!-- Sekcja filmów -->
+    <section class="films" id="top">
+      <div class="film" onclick="openFilm('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+        <img src="https://i.imgur.com/1.jpg" alt="Film 1"/>
+      </div>
+      <div class="film" onclick="openFilm('https://www.youtube.com/watch?v=2Z4m4lnjxkY')">
+        <img src="https://i.imgur.com/2.jpg" alt="Film 2"/>
+      </div>
+      <div class="film" onclick="openFilm('https://www.youtube.com/watch?v=3GwjfUFyY6M')">
+        <img src="https://i.imgur.com/3.jpg" alt="Film 3"/>
+      </div>
+      <!-- Dodaj więcej filmów -->
+    </section>
+
+    <!-- Sekcja "O nas" -->
+    <footer id="about">
+      <p>Sjsksoksshjajsnsbssbnsnsnsjs 7#(#8383827738$;$;+$38838383939393+$;$;$!($#((@)#:+"!$ XD</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
